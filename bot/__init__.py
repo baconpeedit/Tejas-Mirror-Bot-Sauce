@@ -528,16 +528,16 @@ except KeyError:
 try:
     AUTHOR_NAME = getConfig('AUTHOR_NAME')
     if len(AUTHOR_NAME) == 0:
-        AUTHOR_NAME = 'Arsh Sisodiya'
+        AUTHOR_NAME = 'Tejas Singh'
 except KeyError:
-    AUTHOR_NAME = 'Arsh Sisodiya'
+    AUTHOR_NAME = 'Tejas Singh'
 
 try:
     AUTHOR_URL = getConfig('AUTHOR_URL')
     if len(AUTHOR_URL) == 0:
-        AUTHOR_URL = 'https://t.me/heliosmirror'
+        AUTHOR_URL = 'https://t.me/I_Am_Charsi'
 except KeyError:
-    AUTHOR_URL = 'https://t.me/heliosmirror'
+    AUTHOR_URL = 'https://t.me/I_Am_Charsi'
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
@@ -561,8 +561,8 @@ try:
     if len(START_BTN1_NAME) == 0 or len(START_BTN1_URL) == 0:
         raise KeyError
 except:
-    START_BTN1_NAME = 'Repo'
-    START_BTN1_URL = 'https://github.com/arshsisodiya/helios-mirror'
+    START_BTN1_NAME = 'Owner'
+    START_BTN1_URL = 'https://t.me/I_Am_Charsi'
 
 try:
     START_BTN2_NAME = getConfig('START_BTN2_NAME')
@@ -570,8 +570,8 @@ try:
     if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:
         raise KeyError
 except:
-    START_BTN2_NAME = 'Support Group'
-    START_BTN2_URL = 'https://t.me/mirrorsociety'
+    START_BTN2_NAME = 'Channel'
+    START_BTN2_URL = 'https://t.me/CharsiAvoidables'
 updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
 bot = updater.bot
 dispatcher = updater.dispatcher
