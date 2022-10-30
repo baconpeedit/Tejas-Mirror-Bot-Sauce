@@ -204,8 +204,8 @@ def main():
             chat_id, msg_id = map(int, f)
         bot.edit_message_text("Restarted Successfully!", chat_id, msg_id)
         osremove(".restartmsg")
-    elif not notifier_dict and AUTHORIZED_CHATS:
-        for id_ in AUTHORIZED_CHATS:
+    elif not notifier_dict and SUDO_USERS:
+        for id_ in SUDO_USERS:
             try:
                 bot.sendMessage(id_, "Bot Restarted!", 'HTML')
             except Exception as e:
